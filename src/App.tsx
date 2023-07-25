@@ -17,16 +17,16 @@ export const routes = [
         element: <Home />,
       },
       {
+        path: "Memo",
+        element: <Memo init={"hello world"} />,
+      },
+      {
         path: "Stopwatch",
         element: <Stopwatch />,
       },
       {
         path: "Fetcher",
         element: <Fetcher url="https://pokeapi.co/api/v2/pokemon/ditto" />,
-      },
-      {
-        path: "Memo",
-        element: <Memo init={"blah"} />,
       },
       {
         path: "Poke",

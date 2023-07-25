@@ -1,16 +1,21 @@
 import { useEffect, useState } from "react";
 
 /**
- * 1. Change the useEffect contents to use await
+ * 1. Write a re-usable function named "tada"
  *
- *    To do this, write a function named "tada"
- *      it should accept a Promise
- *      and return a tuple of [err, resp] (they can be undefined)
- *      await this function and check for errors (just console.log them)
+ *     - Tada should accept a Promise parmater.
+ *     - Tada should return a tuple of [err, res] ( one of them will be undefined)
+ *     - [err, undefined] if the promise rejects
+ *     - [undefined, res] if the promise resolves
+ *     - Tada should be awaitable
  *
- *  Use tada to await the two promises already in the useEffect
+ * 2. Change the useEffect contents to use await tada
  *
- * 2. Properly type the tada function
+ *    - Remove use of .then from the useEffect
+ *    - Use await tada instead
+ *
+ * 3. Bonus: properly type the tada function
+ *
  */
 export default function Poke() {
   const [pokemon, setPokemon] = useState(null);

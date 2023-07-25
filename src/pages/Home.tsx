@@ -19,6 +19,9 @@ export default function Home() {
         Each page maps to single file in the source. Go through each page and
         fix it. And/Or follow the instructions in the comments.
       </p>
+      <p>
+        The app itself is not broken, no tricks here. Each problem is isolated.
+      </p>
     </>
   );
 }

@@ -3,8 +3,7 @@ import { useState } from "react";
 /**
  * 1. Make it possible to type in the input field
  *
- * 2. Enable the Save button:
- *     set the value of the input field to the saved state
+ * 2. Enable the Save button ( set the value of the input field to the "saved" state )
  *
  */
 export default function Memo({ init }: { init: string }) {
